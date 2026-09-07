@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { GameEngine, freshSave, validSave } from '../lib/game-engine.ts';
 import {
   craft,
+  craftUntilBlocked,
   stat,
   itemKey,
   RARITIES,
@@ -353,4 +354,26 @@ test('talent reset without upgrades leaves a fresh save untouched', () => {
   const before = structuredClone(e.save);
   assert.equal(e.resetTalents(), false);
   assert.deepEqual(e.save, before);
+});
+
+test('shift crafting keeps attempting until fewer than five petals remain', () => {
+  const all = { 'Rose:0': 13 };
+  const result = craftUntilBlocked(
+    all,
+    { type: 'Rose', rarity: 0 },
+    () => 0.99,
+  );
+  assert.deepEqual(result, {
+    attempts: 3,
+    successes: 0,
+    lost: 12,
+    blocked: true,
+  });
+  assert.equal(all['Rose:0'], 1);
+  const one = { 'Rose:0': 13 };
+  assert.deepEqual(
+    craftUntilBlocked(one, { type: 'Rose', rarity: 0 }, () => 0.99, 1),
+    { attempts: 1, successes: 0, lost: 4, blocked: false },
+  );
+  assert.equal(one['Rose:0'], 9);
 });

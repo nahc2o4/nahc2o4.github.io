@@ -56,7 +56,7 @@ import {
   itemKey,
   fromKey,
   stat,
-  craft,
+  craftUntilBlocked,
   slotsForLevel,
   earnedTP,
   loadoutCosts,
@@ -298,7 +298,7 @@ export default function Game() {
       '选择一种花瓣，放入 5 片进行合成',
     ),
     [crafting, setCrafting] = useState(false),
-    [craftAmount, setCraftAmount] = useState(5),
+    [craftAll, setCraftAll] = useState(false),
     [toast, setToast] = useState(''),
     [search, setSearch] = useState(''),
     [showHint, setShowHint] = useState(true),
@@ -583,36 +583,32 @@ export default function Game() {
     const craftingSave = engine.current.save;
     setCrafting(true);
     setCraftMessage('花瓣正在融合…');
-    const batches = Math.floor(
-      Math.min(craftAmount, craftingSave.inventory[itemKey(p)] ?? 0) / 5,
-    );
     let completed = 0,
-      successes = 0,
-      lost = 0;
+      successes = 0;
     const runChunk = () => {
       if (!engine.current || engine.current.save !== craftingSave) {
         setCrafting(false);
         return;
       }
-      const end = Math.min(batches, completed + 100);
-      while (completed < end) {
-        const result = craft(craftingSave.inventory, p);
-        if (!result.ok) break;
-        completed++;
-        if (result.success) successes++;
-        lost += result.success ? 5 : result.lost;
-      }
-      if (completed === end && completed < batches) {
-        setCraftMessage(`合成中… ${completed} / ${batches} 组`);
+      const result = craftUntilBlocked(
+        craftingSave.inventory,
+        p,
+        Math.random,
+        craftAll ? 100 : 1,
+      );
+      completed += result.attempts;
+      successes += result.successes;
+      if (craftAll && !result.blocked) {
         setTimeout(runChunk, 0);
         return;
       }
       setCrafting(false);
-      setCraftAmount(5);
       setCraftMessage(
         completed
-          ? `完成 ${completed} 组合成 · 成功 ${successes} 次 · 获得 ${successes} 片 ${RARITIES[p.rarity + 1].name} ${p.type} · 消耗 ${lost} 片，剩余花瓣已保留`
-          : '需要 5 片相同类型、相同稀有度花瓣；初始 Common Basic 和 Eternal 不参与合成',
+          ? successes
+            ? `获得 ${successes} 片 ${RARITIES[p.rarity + 1].name} ${p.type}`
+            : '合成失败'
+          : '需要 5 片相同类型、相同稀有度花瓣',
       );
       if (settingsRef.current.sound) playTone(successes ? 1000 : 260);
       saveNow();
@@ -1063,7 +1059,9 @@ export default function Game() {
                                 0,
                                 Math.floor(
                                   (Math.min(
-                                    craftAmount,
+                                    craftAll
+                                      ? save.inventory[itemKey(selected)] ?? 0
+                                      : 5,
                                     save.inventory[itemKey(selected)] ?? 0,
                                   ) +
                                     4 -
@@ -1109,7 +1107,7 @@ export default function Game() {
                     >
                       {crafting
                         ? 'Crafting…'
-                        : `Craft${craftAmount > 5 ? ` ${Math.floor(Math.min(craftAmount, selected ? (save.inventory[itemKey(selected)] ?? 0) : 0) / 5)} 组` : ''}`}
+                        : 'Craft'}
                     </button>
                     <p className="craft-instruction">
                       Combine 5 of the same petal to craft an upgrade
@@ -1117,17 +1115,10 @@ export default function Game() {
                     <p className="craft-message" aria-live="polite">
                       {craftMessage}
                     </p>
-                    <small>
-                      Shift＋左键放入全部同类同稀有度花瓣；每 5
-                      片一组，余数和失败返还保留在背包
-                    </small>
                   </div>
                 ) : (
                   <p className="panel-instruction">
                     Drag a petal to equip it
-                    <small>
-                      右键槽位可卸下花瓣 · 已装备的花瓣不在背包计数内
-                    </small>
                   </p>
                 )}
                 <div className="inventory-controls">
@@ -1223,13 +1214,11 @@ export default function Game() {
                               onClick={(event) => {
                                 if (crafting) return;
                                 setSelected(fromKey(key));
-                                const amount = event.shiftKey
-                                  ? count
-                                  : Math.min(5, count);
-                                setCraftAmount(amount);
+                                const all = event.shiftKey;
+                                setCraftAll(all);
                                 if (panel === 'craft')
                                   setCraftMessage(
-                                    `已放入 ${amount} 片花瓣（${Math.floor(amount / 5)} 组），点击合成`,
+                                    'Combine 5 of the same petal to craft an upgrade',
                                   );
                               }}
                               onHover={setHovered}
@@ -1358,7 +1347,7 @@ export default function Game() {
               <div>
                 <h3>{inspect.type}</h3>
                 <span style={{ color: RARITIES[inspect.rarity].color }}>
-                  {RARITIES[inspect.rarity].name} · {PETALS[inspect.type].zh}
+                  {RARITIES[inspect.rarity].name}
                 </span>
               </div>
             </div>

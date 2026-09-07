@@ -19,3 +19,11 @@ void test('talent nodes retain real upgrade action and lock future levels', () =
   assert.ok(page.includes('current >= max'));
   assert.ok(page.includes('aria-pressed={save.biome === biome}'));
 });
+
+void test('craft copy omits group counts and shift mode crafts until blocked', () => {
+  assert.ok(page.includes('craftUntilBlocked'));
+  assert.ok(page.includes('craftAll ? 100 : 1'));
+  assert.ok(page.includes('setCraftAll(all)'));
+  assert.equal(page.includes('组合成'), false);
+  assert.equal(page.includes('} 组`'), false);
+});

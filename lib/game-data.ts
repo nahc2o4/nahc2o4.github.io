@@ -451,6 +451,28 @@ export function craft(
   }
   return { ok: true, success, lost };
 }
+export function craftUntilBlocked(
+  inventory: Inventory,
+  item: Equipped,
+  random = Math.random,
+  limit = Infinity,
+) {
+  let attempts = 0,
+    successes = 0,
+    lost = 0,
+    blocked = false;
+  while (attempts < limit) {
+    const result = craft(inventory, item, random);
+    if (!result.ok) {
+      blocked = true;
+      break;
+    }
+    attempts++;
+    if (result.success) successes++;
+    lost += result.lost;
+  }
+  return { attempts, successes, lost, blocked };
+}
 export const newLoadout = (): Equipped[] => [
   ...Array.from({ length: 4 }, () => ({ type: 'Basic', rarity: 0 })),
   { type: 'Rose', rarity: 0 },
