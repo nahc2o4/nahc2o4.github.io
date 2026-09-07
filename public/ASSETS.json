@@ -1,0 +1,729 @@
+[
+  {
+    "name": "Basic",
+    "kind": "petal",
+    "file": "/assets/sprite-basic.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Basic",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/3/38/TransparentBasic.webp/revision/latest?cb=20230115200231",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentBasic.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      75,
+      64,
+      223,
+      211
+    ],
+    "sha256": "89468dddeec9354394ae773263115d4a947c7bb3ac168eb86eff6a0d3debe97b",
+    "verified": true
+  },
+  {
+    "name": "Light",
+    "kind": "petal",
+    "file": "/assets/sprite-light.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Light",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/d/d8/TransparentLight.webp/revision/latest?cb=20230115202626",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentLight.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      95,
+      83,
+      204,
+      192
+    ],
+    "sha256": "e0eafea6b33984c97d18b9381256330282840a56630d847dfaa9e35ebdde54c7",
+    "verified": true
+  },
+  {
+    "name": "Rock",
+    "kind": "petal",
+    "file": "/assets/sprite-rock.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Rock",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/3/3a/TransparentRock.webp",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentRock.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      66,
+      39,
+      236,
+      226
+    ],
+    "sha256": "d0ded1402ffb9921b3f9ad82179a8ced5fdf5ee2a12663ee1d9e5ff47fd7f4a9",
+    "verified": true
+  },
+  {
+    "name": "Rose",
+    "kind": "petal",
+    "file": "/assets/sprite-rose.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Rose",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/5/57/TransparentRose.webp/revision/latest?cb=20230115202634",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentRose.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      75,
+      63,
+      222,
+      210
+    ],
+    "sha256": "e956588a89281be76252c6a42a324e38cca4a6488580d0bea40682d16e9eb027",
+    "verified": true
+  },
+  {
+    "name": "Stinger",
+    "kind": "petal",
+    "file": "/assets/sprite-stinger.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Stinger",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/a/a9/TransparentStinger.webp/revision/latest?cb=20230115202641",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentStinger.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      116,
+      88,
+      204,
+      186
+    ],
+    "sha256": "de5df1eb95942e199a35968496dc5b73c5b7f1be82e8fd31e95ceeeaf7bb0ae2",
+    "verified": true
+  },
+  {
+    "name": "Leaf",
+    "kind": "petal",
+    "file": "/assets/sprite-leaf.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Leaf",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/1/1c/TransparentLeaf.webp/revision/latest?cb=20230115202625",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentLeaf.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      69,
+      47,
+      218,
+      253
+    ],
+    "sha256": "b2370153b8b3baa3ccf3fa0d080dcf9dc861cb4f36b205ddef88e32cd4beebf6",
+    "verified": true
+  },
+  {
+    "name": "Iris",
+    "kind": "petal",
+    "file": "/assets/sprite-iris.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Iris",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/a/af/TransparentIris.webp/revision/latest?cb=20230115202624",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentIris.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      100,
+      89,
+      197,
+      185
+    ],
+    "sha256": "90a4877b5e773c7bfaf5cd4031425fa3b80f3e27bd5c6d230c1a3a5ca04797e9",
+    "verified": true
+  },
+  {
+    "name": "Wing",
+    "kind": "petal",
+    "file": "/assets/sprite-wing.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Wing",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/c/c0/TransparentWing.webp",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentWing.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      59,
+      75,
+      254,
+      242
+    ],
+    "sha256": "54b7fa1091d9958cf26cf2741ec5325c5c3bf4a939adbc56b3c6a4b6b084b5f3",
+    "verified": true
+  },
+  {
+    "name": "Faster",
+    "kind": "petal",
+    "file": "/assets/sprite-faster.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Faster",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/6/6a/TransparentFaster.webp/revision/latest?cb=20230115202621",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentFaster.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      94,
+      82,
+      203,
+      191
+    ],
+    "sha256": "dd020bd946c928835fc9d3c330d0ddc84da2f3c068cc5c646ae1ec6cdeb7ac73",
+    "verified": true
+  },
+  {
+    "name": "Cactus",
+    "kind": "petal",
+    "file": "/assets/sprite-cactus.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Cactus",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/9/93/TransparentCactus.webp/revision/latest?cb=20230115202648",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentCactus.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      44,
+      32,
+      254,
+      242
+    ],
+    "sha256": "e92b548192efbf3ea41064fcc1df2f8214a04a3a2123d73c905fbd8fc1022c1e",
+    "verified": true
+  },
+  {
+    "name": "Bubble",
+    "kind": "petal",
+    "file": "/assets/sprite-bubble.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Bubble",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/2/2c/TransparentBubble.webp/revision/latest?cb=20230115202647",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentBubble.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      62,
+      51,
+      235,
+      224
+    ],
+    "sha256": "ba8db0c0d27e6459425044fcea65dba0b2b18af4d5ff49d79a51b8b9ae8917f0",
+    "verified": true
+  },
+  {
+    "name": "Missile",
+    "kind": "petal",
+    "file": "/assets/sprite-missile.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Missile",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/2/26/TransparentMissile.webp/revision/latest?cb=20230115202628",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentMissile.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      62,
+      40,
+      203,
+      211
+    ],
+    "sha256": "cb1597c111d6b0e802729005de1041c36b5662bbdd13d9eff756961abfb6b344",
+    "verified": true
+  },
+  {
+    "name": "Peas",
+    "kind": "petal",
+    "file": "/assets/sprite-peas.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Peas",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/6/65/TransparentPeas.webp/revision/latest?cb=20230115202630",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentPeas.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      42,
+      30,
+      256,
+      245
+    ],
+    "sha256": "66249fc4705b33c76cacb45167f82d9f0a2d6a80d0bd541525d668ddb16b0c2b",
+    "verified": true
+  },
+  {
+    "name": "Bee",
+    "file": "/assets/sprite-bee.webp",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/2/21/Bee2.png/revision/latest?cb=20240126112053",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:Bee2.png",
+    "width": 1000,
+    "height": 1000,
+    "alpha_bbox": [
+      175,
+      11,
+      989,
+      824
+    ],
+    "format": "WEBP",
+    "kind": "mob",
+    "page": "https://official-florrio.fandom.com/wiki/Bee",
+    "sha256": "6a7135d576ea4ddfff7d8cbb660648a585dea59adf85c9f5f7b06235a7f4a3f3",
+    "verified": true
+  },
+  {
+    "name": "Pollen",
+    "kind": "petal",
+    "file": "/assets/sprite-pollen.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Pollen",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/a/a5/TransparentPollen.webp/revision/latest?cb=20230115202631",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentPollen.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      93,
+      83,
+      202,
+      192
+    ],
+    "sha256": "290ccdae8e6442490416642192d1f33410dc4dc2eca8ac793918710516321185",
+    "verified": true
+  },
+  {
+    "name": "Sand",
+    "kind": "petal",
+    "file": "/assets/sprite-sand.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Sand",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/5/55/TransparentSand.webp/revision/latest?cb=20230115202635",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentSand.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      34,
+      22,
+      264,
+      253
+    ],
+    "sha256": "6dcba2294ee2ac81477b12affa2613b6b403e7dfdd3833be3e95dfba6849e39a",
+    "verified": true
+  },
+  {
+    "name": "Antennae",
+    "kind": "petal",
+    "file": "/assets/sprite-antennae.webp",
+    "page": "https://official-florrio.fandom.com/wiki/Antennae",
+    "image_url": "https://static.wikia.nocookie.net/official-florrio/images/4/45/TransparentAntennae.webp/revision/latest?cb=20230115202646",
+    "file_page": "https://official-florrio.fandom.com/wiki/File:TransparentAntennae.webp",
+    "format": "WEBP",
+    "width": 290,
+    "height": 290,
+    "alpha_bbox": [
+      43,
+      32,
+      254,
+      211
+    ],
+    "sha256": "a5892287555285848fdd8834d867d7122b97cc7e865637d3223f446c9194e3b9",
+    "verified": true
+  },
+  {
+    "name": "Ladybug",
+    "title": "LadybugTransparent.png",
+    "file": "/assets/sprite-ladybug.webp",
+    "image_url": "https://static.wikia.nocookie.net/florrio/images/1/1f/LadybugTransparent.png/revision/latest?cb=20200215061113",
+    "file_page": "https://florrio.fandom.com/wiki/File:LadybugTransparent.png",
+    "page": "https://florrio.fandom.com/wiki/Ladybug",
+    "width": 100,
+    "height": 100,
+    "alpha_bbox": [
+      21,
+      21,
+      79,
+      79
+    ],
+    "format": "WEBP",
+    "kind": "mob",
+    "sha256": "11159b051a03bd437397bacfd4166dbc1f85d66e101cae7e78df376e8f60c118",
+    "verified": true
+  },
+  {
+    "key": "Spider",
+    "src_file": "/tmp/florr-wiki/Spider.webp",
+    "file_name": "Spider.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/8/84/Spider.png/revision/latest?cb=20220906022127",
+    "page": "https://official-florrio.fandom.com/wiki/File:Spider.png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "6fa451a17a2c2159faebbfb51b95549f3fb588105f709fb1a3cb7a796a0909f5",
+    "served_file": "/assets/wiki-spider.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Worker Ant",
+    "src_file": "/tmp/florr-wiki/Worker-Ant.webp",
+    "file_name": "Worker_Ant.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/c/cc/Worker_Ant.png/revision/latest?cb=20220906021802",
+    "page": "https://official-florrio.fandom.com/wiki/File:Worker_Ant.png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "7d134295bac59bcacfc2b59c089c71cd12e12167bf786cb6b56be51b1e93dbe9",
+    "served_file": "/assets/wiki-worker-ant.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Soldier Ant",
+    "src_file": "/tmp/florr-wiki/Soldier-Ant.webp",
+    "file_name": "Soldier_Ant.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/3/3b/Soldier_Ant.png/revision/latest?cb=20220906021816",
+    "page": "https://official-florrio.fandom.com/wiki/File:Soldier_Ant.png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "480ec8102a644261fe4aa322398a8257228858347ef6afc189181b970d43ba28",
+    "served_file": "/assets/wiki-soldier-ant.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Baby Ant",
+    "src_file": "/tmp/florr-wiki/Baby-Ant.webp",
+    "file_name": "Baby_Ant.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/b/bd/Baby_Ant.png/revision/latest?cb=20220906021748",
+    "page": "https://official-florrio.fandom.com/wiki/File:Baby_Ant.png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "c8bc18e019b61a6f2329b92c699fea3c70664f9b03e4793f9dc10e5d21643ff1",
+    "served_file": "/assets/wiki-baby-ant.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Centipede",
+    "src_file": "/tmp/florr-wiki/Centipede.webp",
+    "file_name": "Centipede_(Head).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/c/ce/Centipede_%28Head%29.png/revision/latest?cb=20220906021926",
+    "page": "https://official-florrio.fandom.com/wiki/File:Centipede_(Head).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "3f9c275e5260cf8bfd2d8f96d0c12b563084747982e1f81e0e78690e9e2e506a",
+    "served_file": "/assets/wiki-centipede.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "centipede-body",
+    "src_file": "/tmp/florr-wiki/centipede-body.webp",
+    "file_name": "Centipede_(Body).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/0/09/Centipede_%28Body%29.png/revision/latest?cb=20220906021938",
+    "page": "https://official-florrio.fandom.com/wiki/File:Centipede_(Body).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "8c0ad8a91eba563eebda4b7519e72e0bd1c8a17c81b2474689ea4a378794f55b",
+    "served_file": "/assets/wiki-centipede-body.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Beetle",
+    "src_file": "/tmp/florr-wiki/Beetle.webp",
+    "file_name": "Beetle_(Blank).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/5/5c/Beetle_%28Blank%29.png/revision/latest?cb=20230716120753",
+    "page": "https://official-florrio.fandom.com/wiki/File:Beetle_(Blank).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "4df25c0ae963ff291708f03c7eb20dadff8563c22f564ebd16a4c4adb4245916",
+    "served_file": "/assets/wiki-beetle.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Scorpion",
+    "src_file": "/tmp/florr-wiki/Scorpion.webp",
+    "file_name": "Scorpion_(Common).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/d/dd/Scorpion_%28Common%29.png/revision/latest?cb=20220906022129",
+    "page": "https://official-florrio.fandom.com/wiki/File:Scorpion_(Common).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      102,
+      195,
+      88,
+      255
+    ],
+    "sha256": "b01b9337ed710f2ac786813f8d2def6a22d830af1c142b636cb1c6582579e5a6",
+    "served_file": "/assets/wiki-scorpion.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Jellyfish",
+    "src_file": "/tmp/florr-wiki/Jellyfish.webp",
+    "file_name": "Jellyfish.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/2/22/Jellyfish.png/revision/latest?cb=20250106084421",
+    "page": "https://official-florrio.fandom.com/wiki/File:Jellyfish.png",
+    "width": 1000,
+    "height": 1000,
+    "bbox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "sample": [
+      176,
+      176,
+      176,
+      255
+    ],
+    "sha256": "0968b3c5ed799de7fca5cd6da53858580f687af781a1a47feeee7a7eddbe6d40",
+    "served_file": "/assets/wiki-jellyfish.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Starfish",
+    "src_file": "/tmp/florr-wiki/Starfish.webp",
+    "file_name": "Starfish_(Mob).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/2/28/Starfish_%28Mob%29.png/revision/latest?cb=20220906022316",
+    "page": "https://official-florrio.fandom.com/wiki/File:Starfish_(Mob).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "8ee54c143395a6ac162f6d0c9c03de041fffd1833b4391e551bc66da73257e3e",
+    "served_file": "/assets/wiki-starfish.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Crab",
+    "src_file": "/tmp/florr-wiki/Crab.webp",
+    "file_name": "Crab2.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/6/6f/Crab2.png/revision/latest?cb=20240126112238",
+    "page": "https://official-florrio.fandom.com/wiki/File:Crab2.png",
+    "width": 1000,
+    "height": 1000,
+    "bbox": [
+      5,
+      5,
+      995,
+      995
+    ],
+    "sample": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "3de2c4a5a546649688c6124faf032cdd6028f925fefc84f7a7cb4077bc886bb0",
+    "served_file": "/assets/wiki-crab.webp",
+    "processing": "original bytes; transparent bounding rectangle"
+  },
+  {
+    "key": "Shell",
+    "src_file": "/tmp/florr-wiki/Shell.webp",
+    "file_name": "Shell_(Mob).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/f/f8/Shell_%28Mob%29.png/revision/latest?cb=20240706155617",
+    "page": "https://official-florrio.fandom.com/wiki/File:Shell_(Mob).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "0370188513a40ae91c15e2387153630f04e55dc396179040f102028c70b16f93",
+    "served_file": "/assets/wiki-shell.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Sandstorm",
+    "src_file": "/tmp/florr-wiki/Sandstorm.webp",
+    "file_name": "Sandstorm.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/b/b7/Sandstorm.png/revision/latest?cb=20240706161806",
+    "page": "https://official-florrio.fandom.com/wiki/File:Sandstorm.png",
+    "width": 1000,
+    "height": 1000,
+    "bbox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "sample": [
+      205,
+      207,
+      206,
+      255
+    ],
+    "sha256": "70c8b90ed89c121de3df4eaf7bc3ae68bd4531dbc633cb31adb6823099ac9e97",
+    "served_file": "/assets/wiki-sandstorm.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Rock",
+    "src_file": "/tmp/florr-wiki/Rock.webp",
+    "file_name": "Rock_(Mob).png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/a/ad/Rock_%28Mob%29.png/revision/latest?cb=20220906021654",
+    "page": "https://official-florrio.fandom.com/wiki/File:Rock_(Mob).png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "da4355f5ef71d8cddea88771312492fb8b7e83afe805fcff24d86a166d521f8f",
+    "served_file": "/assets/wiki-mob-rock.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  },
+  {
+    "key": "Flower",
+    "src_file": "/tmp/florr-wiki/Flower.webp",
+    "file_name": "Flower.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/d/dd/Flower.png/revision/latest?cb=20250321032702",
+    "page": "https://official-florrio.fandom.com/wiki/File:Flower.png",
+    "width": 675,
+    "height": 675,
+    "bbox": [
+      0,
+      0,
+      675,
+      675
+    ],
+    "sample": [
+      207,
+      187,
+      80,
+      255
+    ],
+    "sha256": "390135a444a7b90434bb1e40897833c43b1f7020284bec3b0642b20a6d426510",
+    "served_file": "/assets/wiki-flower.webp",
+    "processing": "original bytes; transparent bounding rectangle"
+  },
+  {
+    "key": "Ladybug",
+    "src_file": "/tmp/florr-wiki/Ladybug.webp",
+    "file_name": "Ladybug.png",
+    "url": "https://static.wikia.nocookie.net/official-florrio/images/3/38/Ladybug.png/revision/latest?cb=20220906021718",
+    "page": "https://official-florrio.fandom.com/wiki/File:Ladybug.png",
+    "width": 603,
+    "height": 603,
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "sample": [
+      207,
+      207,
+      207,
+      255
+    ],
+    "sha256": "60ea2ca9581d62b64253c16bf6f5073fa59022ee88d2c3486a47ee907f8d767a",
+    "served_file": "/assets/wiki-ladybug.webp",
+    "processing": "original bytes; card border removed only in cached runtime display surface"
+  }
+]

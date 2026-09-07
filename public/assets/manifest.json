@@ -1,0 +1,450 @@
+{
+  "Basic": {
+    "src": "/assets/sprite-basic.webp",
+    "bbox": [
+      75,
+      64,
+      223,
+      211
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Light": {
+    "src": "/assets/sprite-light.webp",
+    "bbox": [
+      95,
+      83,
+      204,
+      192
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Rock": {
+    "src": "/assets/sprite-rock.webp",
+    "bbox": [
+      66,
+      39,
+      236,
+      226
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Rose": {
+    "src": "/assets/sprite-rose.webp",
+    "bbox": [
+      75,
+      63,
+      222,
+      210
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Stinger": {
+    "src": "/assets/sprite-stinger.webp",
+    "bbox": [
+      116,
+      88,
+      204,
+      186
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Leaf": {
+    "src": "/assets/sprite-leaf.webp",
+    "bbox": [
+      69,
+      47,
+      218,
+      253
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Iris": {
+    "src": "/assets/sprite-iris.webp",
+    "bbox": [
+      100,
+      89,
+      197,
+      185
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Wing": {
+    "src": "/assets/sprite-wing.webp",
+    "bbox": [
+      59,
+      75,
+      254,
+      242
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Faster": {
+    "src": "/assets/sprite-faster.webp",
+    "bbox": [
+      94,
+      82,
+      203,
+      191
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Cactus": {
+    "src": "/assets/sprite-cactus.webp",
+    "bbox": [
+      44,
+      32,
+      254,
+      242
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Bubble": {
+    "src": "/assets/sprite-bubble.webp",
+    "bbox": [
+      62,
+      51,
+      235,
+      224
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Missile": {
+    "src": "/assets/sprite-missile.webp",
+    "bbox": [
+      62,
+      40,
+      203,
+      211
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Peas": {
+    "src": "/assets/sprite-peas.webp",
+    "bbox": [
+      42,
+      30,
+      256,
+      245
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "bee": {
+    "src": "/assets/sprite-bee.webp",
+    "bbox": [
+      175,
+      11,
+      989,
+      824
+    ],
+    "width": 1000,
+    "height": 1000,
+    "source": "https://official-florrio.fandom.com/wiki/File:Bee2.png"
+  },
+  "Pollen": {
+    "src": "/assets/sprite-pollen.webp",
+    "bbox": [
+      93,
+      83,
+      202,
+      192
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Sand": {
+    "src": "/assets/sprite-sand.webp",
+    "bbox": [
+      34,
+      22,
+      264,
+      253
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "Antennae": {
+    "src": "/assets/sprite-antennae.webp",
+    "bbox": [
+      43,
+      32,
+      254,
+      211
+    ],
+    "width": 290,
+    "height": 290
+  },
+  "ladybug": {
+    "src": "/assets/wiki-ladybug.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Ladybug.png",
+    "rotation": 0
+  },
+  "spider": {
+    "src": "/assets/wiki-spider.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Spider.png",
+    "rotation": 0
+  },
+  "worker-ant": {
+    "src": "/assets/wiki-worker-ant.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Worker_Ant.png",
+    "rotation": 0
+  },
+  "soldier-ant": {
+    "src": "/assets/wiki-soldier-ant.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Soldier_Ant.png",
+    "rotation": 0
+  },
+  "baby-ant": {
+    "src": "/assets/wiki-baby-ant.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Baby_Ant.png",
+    "rotation": 0
+  },
+  "centipede": {
+    "src": "/assets/wiki-centipede.webp",
+    "bbox": [
+      50,
+      50,
+      450,
+      447
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Centipede_(Head).png",
+    "rotation": 0,
+    "customCrop": true,
+    "mask": {
+      "circle": [
+        301,
+        302,
+        143
+      ],
+      "rects": [
+        [
+          55,
+          50,
+          262,
+          258
+        ],
+        [
+          355,
+          162,
+          432,
+          232
+        ],
+        [
+          160,
+          350,
+          230,
+          435
+        ]
+      ]
+    }
+  },
+  "centipede-body": {
+    "src": "/assets/wiki-centipede.webp",
+    "bbox": [
+      155,
+      157,
+      447,
+      447
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Centipede_(Head).png",
+    "rotation": 0,
+    "customCrop": true,
+    "mask": {
+      "circle": [
+        301,
+        302,
+        142
+      ]
+    }
+  },
+  "beetle": {
+    "src": "/assets/wiki-beetle.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Beetle_(Blank).png",
+    "rotation": 0
+  },
+  "scorpion": {
+    "src": "/assets/wiki-scorpion.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Scorpion_(Common).png",
+    "rotation": 0
+  },
+  "jellyfish": {
+    "src": "/assets/wiki-jellyfish.webp",
+    "bbox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "width": 1000,
+    "height": 1000,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Jellyfish.png",
+    "rotation": 0
+  },
+  "starfish": {
+    "src": "/assets/wiki-starfish.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Starfish_(Mob).png",
+    "rotation": 0
+  },
+  "crab": {
+    "src": "/assets/wiki-crab.webp",
+    "bbox": [
+      5,
+      5,
+      995,
+      995
+    ],
+    "width": 1000,
+    "height": 1000,
+    "card": false,
+    "source": "https://official-florrio.fandom.com/wiki/File:Crab2.png",
+    "rotation": 0
+  },
+  "shell": {
+    "src": "/assets/wiki-shell.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Shell_(Mob).png",
+    "rotation": 0
+  },
+  "sandstorm": {
+    "src": "/assets/wiki-sandstorm.webp",
+    "bbox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "width": 1000,
+    "height": 1000,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Sandstorm.png",
+    "rotation": 0
+  },
+  "mob-rock": {
+    "src": "/assets/wiki-mob-rock.webp",
+    "bbox": [
+      0,
+      0,
+      603,
+      603
+    ],
+    "width": 603,
+    "height": 603,
+    "card": true,
+    "source": "https://official-florrio.fandom.com/wiki/File:Rock_(Mob).png",
+    "rotation": 0
+  },
+  "Flower": {
+    "src": "/assets/wiki-flower.webp",
+    "bbox": [
+      0,
+      0,
+      675,
+      675
+    ],
+    "width": 675,
+    "height": 675,
+    "card": false,
+    "source": "https://official-florrio.fandom.com/wiki/File:Flower.png",
+    "rotation": 0
+  }
+}
