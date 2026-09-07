@@ -22,8 +22,15 @@ void test('talent nodes retain real upgrade action and lock future levels', () =
 
 void test('craft copy omits group counts and shift mode crafts until blocked', () => {
   assert.ok(page.includes('craftUntilBlocked'));
-  assert.ok(page.includes('craftAll ? 100 : 1'));
+  assert.ok(page.includes('repeat ? 100 : 1'));
   assert.ok(page.includes('setCraftAll(all)'));
   assert.equal(page.includes('组合成'), false);
   assert.equal(page.includes('} 组`'), false);
+});
+
+void test('Shift on Craft starts continuous crafting without Shift-selecting the petal', () => {
+  assert.ok(page.includes("craftAll || event.shiftKey || keys.current.has('shift')"));
+  assert.ok(page.includes('if (repeat && !result.blocked)'));
+  assert.equal(page.match(/Combine 5 of the same petal to craft an upgrade/g)?.length, 1);
+  assert.equal(page.includes('选择一种花瓣，放入 5 片进行合成'), false);
 });

@@ -294,9 +294,7 @@ export default function Game() {
     [selected, setSelected] = useState<Equipped | null>(null),
     [hovered, setHovered] = useState<Equipped | null>(null),
     [rarityFilter, setRarityFilter] = useState(-1),
-    [craftMessage, setCraftMessage] = useState(
-      '选择一种花瓣，放入 5 片进行合成',
-    ),
+    [craftMessage, setCraftMessage] = useState(''),
     [crafting, setCrafting] = useState(false),
     [craftAll, setCraftAll] = useState(false),
     [toast, setToast] = useState(''),
@@ -577,12 +575,14 @@ export default function Game() {
       saveNow();
     } catch {}
   };
-  const doCraft = () => {
+  const doCraft = (event: React.MouseEvent<HTMLButtonElement>) => {
     if (!selected || crafting || !engine.current) return;
+    const repeat = craftAll || event.shiftKey || keys.current.has('shift');
+    setCraftAll(repeat);
     const p = { ...selected };
     const craftingSave = engine.current.save;
     setCrafting(true);
-    setCraftMessage('花瓣正在融合…');
+    setCraftMessage('');
     let completed = 0,
       successes = 0;
     const runChunk = () => {
@@ -594,11 +594,11 @@ export default function Game() {
         craftingSave.inventory,
         p,
         Math.random,
-        craftAll ? 100 : 1,
+        repeat ? 100 : 1,
       );
       completed += result.attempts;
       successes += result.successes;
-      if (craftAll && !result.blocked) {
+      if (repeat && !result.blocked) {
         setTimeout(runChunk, 0);
         return;
       }
@@ -1217,9 +1217,7 @@ export default function Game() {
                                 const all = event.shiftKey;
                                 setCraftAll(all);
                                 if (panel === 'craft')
-                                  setCraftMessage(
-                                    'Combine 5 of the same petal to craft an upgrade',
-                                  );
+                                  setCraftMessage('');
                               }}
                               onHover={setHovered}
                             />
