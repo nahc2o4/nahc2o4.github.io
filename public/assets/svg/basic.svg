@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="290" viewBox="0 0 290 290">
+  <title>Basic petal</title>
+  <g id="body" data-pivot="149 137.5">
+    <circle id="outline" cx="149" cy="137.5" r="73.5" fill="#cfcfcf"/>
+    <circle id="surface" cx="149" cy="137.5" r="54" fill="#ffffff"/>
+  </g>
+</svg>

@@ -10,6 +10,7 @@ for (const match of html.matchAll(/(?:src|href)="(\/[^"?#]+)[^\"]*"/g)) {
 const manifest = JSON.parse(readFileSync(resolve(root, 'assets/manifest.json'), 'utf8'));
 for (const [name, info] of Object.entries(manifest)) {
   assert.ok(existsSync(resolve(root, '.' + info.src)), `Missing sprite: ${name}`);
+  if (info.vector) assert.ok(existsSync(resolve(root, '.' + info.vector.src)), `Missing vector: ${name}`);
 }
 assert.ok(existsSync(resolve(root, 'fonts/ubuntu-bold.ttf')));
 assert.ok(existsSync(resolve(root, 'index.rsc')));

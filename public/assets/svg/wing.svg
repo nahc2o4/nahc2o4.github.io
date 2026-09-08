@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="290" viewBox="0 0 290 290">
+  <title>Wing petal</title>
+  <g id="wing" data-pivot="69 189">
+    <path id="outline" d="M69 189 Q181 189 228 85 Q269 163 210 210 Q134 263 69 189Z" fill="#ffffff" stroke="#cecfce" stroke-width="20" stroke-linejoin="round"/>
+  </g>
+</svg>

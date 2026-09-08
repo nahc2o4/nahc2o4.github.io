@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none">
+<title>Bee — layered vector trial</title>
+<defs><clipPath id="bee-inner"><ellipse cx="0" cy="0" rx="314" ry="201.5"/></clipPath></defs>
+<g id="stinger" fill="#333333"><path d="M198 677 L176 791 Q171 829 211 823 L336 801 Z"/></g>
+<g id="body" transform="translate(499.7 499.7) rotate(-45)"><ellipse rx="366" ry="253" fill="#cebb50"/><ellipse rx="314" ry="201.5" fill="#ffe763"/>
+<g id="stripes" clip-path="url(#bee-inner)" fill="#333333"><path d="M-400-260H-226V260H-400Z M-113-260H0V260H-113Z M113-260H226V260H113Z"/></g></g>
+<g id="antennae" stroke="#333333" stroke-width="32" stroke-linecap="round"><path id="antenna-left" d="M658 267 Q699 197 697 106"/><path id="antenna-right" d="M733 341 Q799 301 892 303"/><g fill="#333333" stroke="none"><circle cx="692.5" cy="67" r="56.5"/><circle cx="932.5" cy="307.5" r="56.5"/></g></g>
+</svg>

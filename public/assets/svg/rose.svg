@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="290" viewBox="0 0 290 290">
+  <title>Rose petal</title>
+  <g id="body" data-pivot="148.5 136.5">
+    <circle id="outline" cx="148.5" cy="136.5" r="73.5" fill="#cc78a7"/>
+    <circle id="surface" cx="148.5" cy="136.5" r="54" fill="#ff94cf"/>
+  </g>
+</svg>

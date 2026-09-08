@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="603" height="603" viewBox="0 0 603 603" fill="none">
+<title>Ladybug — layered vector trial, transparent card-free canvas</title>
+<defs><clipPath id="ladybug-wing-clip"><path d="M290 180 C365 171 425 226 425 301 C425 369 370 424 302 424 C229 424 172 365 180 290 C246 285 282 246 290 180Z"/></clipPath></defs>
+<g id="head"><path d="M167 262 C163 209 205 165 257 167 C284 168 309 185 321 211 L261 282Z" fill="#0e0e0e"/><path d="M175 259 C185 228 208 207 241 203 L263 185 L271 239 L225 275Z" fill="#111111"/></g>
+<g id="body"><path d="M275 149 C368 132 457 200 457 301 C457 387 387 456 302 456 C215 456 147 388 147 302 Q147 285 150 273 Q151 262 165 260 C224 255 254 225 259 166 Q260 153 275 149Z" fill="#be342a"/><path d="M290 180 C365 171 425 226 425 301 C425 369 370 424 302 424 C229 424 172 365 180 290 C246 285 282 246 290 180Z" fill="#eb4034"/></g>
+<g id="spots" fill="#111111" clip-path="url(#ladybug-wing-clip)"><ellipse cx="282.5" cy="315.5" rx="22.5" ry="22.7"/><ellipse cx="314" cy="440" rx="24" ry="22.5"/><ellipse cx="314" cy="160" rx="21" ry="21"/></g>
+</svg>

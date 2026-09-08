@@ -10,6 +10,7 @@ export type SpriteInfo = {
   mask?: { circle: number[]; rects?: number[][] };
   rotation?: number;
   source?: string;
+  vector?: { src: string; bbox?: number[] };
 };
 export type PreparedSprite = {
   canvas: HTMLCanvasElement;
@@ -41,6 +42,22 @@ export function loadSprites() {
     await Promise.all(
       Object.entries(spriteManifest).map(async ([key, info]) => {
         const img = new Image();
+        if (info.vector) {
+          try {
+            img.src = info.vector.src;
+            await img.decode();
+            preparedSprites[key] = prepare(img, {
+              ...info,
+              bbox: info.vector.bbox ?? info.bbox,
+              card: false,
+              customCrop: false,
+              mask: undefined,
+            });
+            return;
+          } catch {
+            // Retain the original asset if a vector fails to load.
+          }
+        }
         img.src = info.src;
         await img.decode();
         preparedSprites[key] = prepare(img, info);

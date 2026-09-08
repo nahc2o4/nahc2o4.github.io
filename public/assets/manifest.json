@@ -8,7 +8,10 @@
       211
     ],
     "width": 290,
-    "height": 290
+    "height": 290,
+    "vector": {
+      "src": "/assets/svg/basic.svg"
+    }
   },
   "Light": {
     "src": "/assets/sprite-light.webp",
@@ -41,7 +44,10 @@
       210
     ],
     "width": 290,
-    "height": 290
+    "height": 290,
+    "vector": {
+      "src": "/assets/svg/rose.svg"
+    }
   },
   "Stinger": {
     "src": "/assets/sprite-stinger.webp",
@@ -85,7 +91,10 @@
       242
     ],
     "width": 290,
-    "height": 290
+    "height": 290,
+    "vector": {
+      "src": "/assets/svg/wing.svg"
+    }
   },
   "Faster": {
     "src": "/assets/sprite-faster.webp",
@@ -152,7 +161,10 @@
     ],
     "width": 1000,
     "height": 1000,
-    "source": "https://official-florrio.fandom.com/wiki/File:Bee2.png"
+    "source": "https://official-florrio.fandom.com/wiki/File:Bee2.png",
+    "vector": {
+      "src": "/assets/svg/bee.svg"
+    }
   },
   "Pollen": {
     "src": "/assets/sprite-pollen.webp",
@@ -199,7 +211,16 @@
     "height": 603,
     "card": true,
     "source": "https://official-florrio.fandom.com/wiki/File:Ladybug.png",
-    "rotation": 0
+    "rotation": 0,
+    "vector": {
+      "src": "/assets/svg/ladybug.svg",
+      "bbox": [
+        147,
+        147,
+        457,
+        457
+      ]
+    }
   },
   "spider": {
     "src": "/assets/wiki-spider.webp",
