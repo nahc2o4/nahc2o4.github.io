@@ -642,16 +642,22 @@ export class GameEngine {
       m.angle = Math.atan2(Math.sin(m.angle), Math.cos(m.angle));
       const v = d.speed * (m.aggro ? 1 : 0.35);
       const acceleration = -Math.expm1(-7 * dt);
-      m.vx += (Math.cos(m.angle) * v - m.vx) * acceleration;
-      m.vy += (Math.sin(m.angle) * v - m.vy) * acceleration;
-      m.x = Math.max(
-        m.radius,
-        Math.min(this.width - m.radius, m.x + m.vx * dt),
-      );
-      m.y = Math.max(
-        m.radius,
-        Math.min(this.height - m.radius, m.y + m.vy * dt),
-      );
+      const previousSpeed = Math.hypot(m.vx, m.vy);
+      const speed = d.speed === 0 ? 0 : previousSpeed + (v - previousSpeed) * acceleration;
+      m.vx = Math.cos(m.angle) * speed;
+      m.vy = Math.sin(m.angle) * speed;
+      // Shorten the whole forward step at a boundary; independent XY clamping slides sideways.
+      const dx = m.vx * dt, dy = m.vy * dt;
+      let fraction = 1;
+      if (dx > 0) fraction = Math.min(fraction, (this.width - m.radius - m.x) / dx);
+      if (dx < 0) fraction = Math.min(fraction, (m.radius - m.x) / dx);
+      if (dy > 0) fraction = Math.min(fraction, (this.height - m.radius - m.y) / dy);
+      if (dy < 0) fraction = Math.min(fraction, (m.radius - m.y) / dy);
+      fraction = Math.max(0, fraction);
+      m.vx *= fraction;
+      m.vy *= fraction;
+      m.x += m.vx * dt;
+      m.y += m.vy * dt;
       if (distance < m.radius + this.radius) {
         const a = Math.atan2(this.y - m.y, this.x - m.x);
         const overlap = m.radius + this.radius - distance;

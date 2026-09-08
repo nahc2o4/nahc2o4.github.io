@@ -1,6 +1,6 @@
 import { GameEngine } from './game-engine.ts';
 import { BIOMES, RARITIES, MOBS, PETALS, stat } from './game-data.ts';
-import { drawSprite, petalWorldSize } from './sprite-loader.ts';
+import { drawSprite, petalWorldSize, mobSpriteAngle } from './sprite-loader.ts';
 export { drawSprite, loadSprites } from './sprite-loader.ts';
 import { createFace, updateFace, drawFlowerFace } from './flower-face.ts';
 export function flower(
@@ -170,7 +170,7 @@ export class GameRenderer {
             m.x - Math.cos(a) * n * m.radius * 1.35,
             m.y - Math.sin(a) * n * m.radius * 1.35,
             m.radius * 2.2,
-            m.angle,
+            mobSpriteAngle('centipede-body', m.angle),
           );
         }
       }
@@ -180,10 +180,10 @@ export class GameRenderer {
         m.x,
         m.y,
         m.radius * 2.15,
-        m.angle + Math.PI / 2,
+        mobSpriteAngle(key, m.angle),
       );
       if (!found) {
-        drawSprite(c, 'mob-rock', m.x, m.y, m.radius * 2.15, m.angle);
+        drawSprite(c, 'mob-rock', m.x, m.y, m.radius * 2.15, mobSpriteAngle('mob-rock', m.angle));
       }
       c.restore();
       if (this.showNames) {

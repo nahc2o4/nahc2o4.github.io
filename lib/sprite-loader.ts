@@ -9,6 +9,8 @@ export type SpriteInfo = {
   customCrop?: boolean;
   mask?: { circle: number[]; rects?: number[][] };
   rotation?: number;
+  /** Native sprite front in radians: right=0, down=PI/2 (before rotation). */
+  headAngle?: number;
   source?: string;
   vector?: { src: string; bbox?: number[] };
 };
@@ -32,6 +34,10 @@ export function petalThumbnailSize(key: string, frameSize: number) {
 export function petalWorldSize(key: string, basicSize = 15.75) {
   const basicOccupancy = petalThumbnailSize('Basic', 1);
   return petalThumbnailSize(key, basicSize / basicOccupancy);
+}
+export function mobSpriteAngle(key: string, heading: number) {
+  const info = spriteManifest[key];
+  return heading - (info?.headAngle ?? 0) - (info?.rotation ?? 0);
 }
 let loading: Promise<void> | undefined;
 export function loadSprites() {
