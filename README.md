@@ -66,3 +66,5 @@ GitHub Pages 和原 Sites 地址各自保存浏览器本地进度，不会自动
 ## Arcaea PTT 手动计算器
 
 地址：https://nahc2o4.github.io/arcaea-ptt/ 。独立静态文件位于 `public/arcaea-ptt/`，随现有 Pages 工作流发布。支持单曲计算、Best 50 / B30 + R10 切换、浏览器本地保存及 JSON 导入导出；用户成绩不保存在仓库。
+
+计算器的“冲 13 计划”预置 19 张推荐 / 备选谱面，支持两阶段目标、是否已解锁、通关加成、预测 PTT 与目标达成状态。实际成绩存储键为 `arc-ptt-v1`，计划存储键为 `arc-ptt-plan-v1`，分别导入导出；计划仅通过当前实际成绩计算预测，不将目标写成实绩。计划预测固定使用 v7.0。新增计划回归测试：`node --test tests/arcaea-plan.test.mjs`。

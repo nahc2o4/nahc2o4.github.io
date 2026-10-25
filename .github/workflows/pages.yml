@@ -19,6 +19,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+      - run: node --test tests/arcaea-plan.test.mjs
       - run: npm run typecheck
       - run: npm run build:pages
       - run: node scripts/verify-pages.mjs

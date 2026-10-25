@@ -19,7 +19,7 @@ writeFileSync(resolve(root, '.nojekyll'), '');
 console.log(`PAGES: HTML, RSC, font and ${Object.keys(manifest).length} sprites verified`);
 
 // Keep the standalone calculator available alongside the existing game.
-for (const file of ['index.html', 'style.css', 'app.mjs', 'calc.mjs']) {
+for (const file of ['index.html', 'style.css', 'app.mjs', 'calc.mjs', 'plan.mjs', 'plan-ui.mjs']) {
   assert.ok(existsSync(resolve(root, 'arcaea-ptt', file)), `Missing calculator asset: ${file}`);
 }
 assert.match(readFileSync(resolve(root, 'arcaea-ptt/index.html'), 'utf8'), /Arcaea/);
