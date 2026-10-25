@@ -17,3 +17,10 @@ assert.ok(existsSync(resolve(root, 'index.rsc')));
 assert.ok(!existsSync(resolve(root, '.openai')));
 writeFileSync(resolve(root, '.nojekyll'), '');
 console.log(`PAGES: HTML, RSC, font and ${Object.keys(manifest).length} sprites verified`);
+
+// Keep the standalone calculator available alongside the existing game.
+for (const file of ['index.html', 'style.css', 'app.mjs', 'calc.mjs']) {
+  assert.ok(existsSync(resolve(root, 'arcaea-ptt', file)), `Missing calculator asset: ${file}`);
+}
+assert.match(readFileSync(resolve(root, 'arcaea-ptt/index.html'), 'utf8'), /Arcaea/);
+console.log('PAGES: Arcaea PTT calculator verified at /arcaea-ptt/');

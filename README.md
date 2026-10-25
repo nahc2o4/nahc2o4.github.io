@@ -62,3 +62,7 @@ git push origin main
 从原 Sites 工作目录同步最新源码，可运行 `node scripts/sync-github.mjs ../florr.io-github`，然后在 GitHub 工作副本审阅、提交并推送。同步只复制源文件白名单，不包含旧 Git 历史、私有部署配置、凭据、日志或验证副本；不会自动删除目标中的额外文件。
 
 GitHub Pages 和原 Sites 地址各自保存浏览器本地进度，不会自动同步存档。
+
+## Arcaea PTT 手动计算器
+
+地址：https://nahc2o4.github.io/arcaea-ptt/ 。独立静态文件位于 `public/arcaea-ptt/`，随现有 Pages 工作流发布。支持单曲计算、Best 50 / B30 + R10 切换、浏览器本地保存及 JSON 导入导出；用户成绩不保存在仓库。
